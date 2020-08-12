@@ -121,8 +121,16 @@
               "devServerTarget": "FINAL-WEB:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "FINAL-WEB"
+    }
+  },
+  "defaultProject": "FINAL-WEB",
+  "cli": {
+    "analytics": false
+  }
 }

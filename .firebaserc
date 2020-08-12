@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "final-web-e2e70": {
+      "hosting": {
+        "FINAL-WEB": [
+          "final-web-e2e70"
+        ]
+      }
+    }
+  }
+}
