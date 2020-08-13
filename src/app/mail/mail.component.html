@@ -1,1 +1,24 @@
-<p>mail works!</p>
+<div id="id01" class="modal">
+
+    <div class="modal-content animate" action="/action_page.php" method="post">
+
+        <div class="container">
+
+            <label><b>Email</b></label>
+            <input type="text" [(ngModel)]="contact.email" placeholder="Email" required>
+
+
+            <textarea type="text" placeholder="Type a message" required></textarea>
+
+
+
+
+
+
+            <button>Send</button>
+            <button (click)="goBack()">Go Back</button>
+
+        </div>
+
+    </div>
+</div>

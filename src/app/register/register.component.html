@@ -1,1 +1,36 @@
-<p>register works!</p>
+<div id="id01" class="modal">
+
+    <div class="modal-content animate">
+
+        <div class="container">
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput [(ngModel)]="profile.name" placeholder="Nombre">
+
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input matInput [(ngModel)]="profile.email" type="email" placeholder="Correo">
+
+            </mat-form-field>
+
+
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput [(ngModel)]="profile.password" type="password" placeholder="Contraseña">
+
+            </mat-form-field>
+
+
+
+
+
+            <button type="button" (click)="register();">Register</button>
+
+        </div>
+
+    </div>
+</div>

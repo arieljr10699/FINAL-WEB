@@ -1,1 +1,29 @@
-<p>add-contact works!</p>
+<div id="id01" class="modal">
+
+
+    <form class="modal-content animate" action="/action_page.php" method="post">
+
+
+        <div class="container">
+            <label for="uname"><b>Name</b></label>
+            <input type="text" [(ngModel)]="profile.name" name="uname" required>
+
+            <label for="psw"><b>Last Name</b></label>
+            <input type="text" [(ngModel)]="profile.lastName" name="psw" required>
+
+            <label for="psw"><b>Email</b></label>
+            <input type="text" [(ngModel)]="profile.email" name="psw" required>
+
+            <label for="psw"><b>Telephone</b></label>
+            <input type="text" [(ngModel)]="profile.telNumber" name="psw" required>
+
+
+
+
+            <button (click)="addContact();">Add Contact</button>
+            <button (click)="goBack();">Cancel</button>
+
+        </div>
+
+    </form>
+</div>

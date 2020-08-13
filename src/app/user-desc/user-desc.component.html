@@ -1,1 +1,33 @@
-<p>user-desc works!</p>
+<div id="id01" class="modal">
+
+    <div class="modal-content animate">
+
+        <div class="container">
+
+            <label><b>Name</b></label>
+            <input type="text" [(ngModel)]="contact.name" required>
+
+            <label><b>Last Name</b></label>
+            <input type="text" [(ngModel)]="contact.lastName" required>
+
+            <label><b>Email</b></label>
+            <input type="text" [(ngModel)]="contact.email" required>
+
+            <label><b>PhoneNumber</b></label>
+            <input type="text" [(ngModel)]="contact.telNumber" required>
+
+
+
+
+            <button type="button" (click)="sendMessage();">Send Message</button>
+
+
+            <button (click)="updateContact();">Save</button>
+
+
+            <button (click)="goBack();">Cancel</button>
+
+        </div>
+
+    </div>
+</div>
