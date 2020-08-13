@@ -10,6 +10,7 @@ import { UserDescComponent } from './user-desc/user-desc.component';
 import { MailComponent } from './mail/mail.component';
 import { AddContactComponent } from './add-contact/add-contact.component';
 import { AngularFireModule } from '@angular/fire';
+ 
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
@@ -18,6 +19,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import {MatButtonModule} from '@angular/material/button';
     HttpClientModule,
     MatInputModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
